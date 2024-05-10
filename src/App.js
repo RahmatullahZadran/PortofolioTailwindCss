@@ -1,6 +1,7 @@
-import Midle from './components/midle.js';
+import React from 'react';
 import './App.css';
-import Navbar from './components/navbar.js';
+import Navbar from './components/navbar';
+import Midle from './components/midle';
 
 function App() {
   return (
