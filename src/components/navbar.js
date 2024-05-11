@@ -18,6 +18,8 @@ export default function Example() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isGithubScaled, setIsGithubScaled] = useState(false);
   const [isLinkedinScaled, setIsLinkedinScaled] = useState(false);
+  const [isCallScaled, setIsCallScaled] = useState(false);
+  const [isEmailScaled, setIsEmailScaled] = useState(false);
 
   const handleGithubMouseEnter = () => {
     setIsGithubScaled(true);
@@ -34,6 +36,23 @@ export default function Example() {
   const handleLinkedinMouseLeave = () => {
     setIsLinkedinScaled(false);
   };
+
+  const handleEmailMouseEnter = () => {
+    setIsEmailScaled(true);
+  };
+
+  const handleEmailMouseLeave = () => {
+    setIsEmailScaled(false);
+  };
+  
+  const handleCallMouseEnter = () => {
+    setIsCallScaled(true);
+  };
+  
+  const handleCallMouseLeave = () => {
+    setIsCallScaled(false);
+  };
+  
 
   return (
     <Disclosure as="nav" className="bg-gray-800">
@@ -119,11 +138,19 @@ export default function Example() {
                   >
                     <img className={`h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 ${isLinkedinScaled ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/linkedin%20(1).png?alt=media&token=605eab92-1812-4fde-a52b-fa278997c678" alt="LinkedIn Icon" />
                   </a>
-                  <a href="mailto:rahmatullahzadran@outlook.com">
-                    <img className="h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 animate-grow" src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/mail.png?alt=media&token=6279881c-fd50-4212-88dc-9a6a11fdf4d9" alt="Email Icon" />
+                  
+                  <a href="mailto:rahmatullahzadran@outlook.com"
+                  target="_blank"
+                  onMouseEnter={handleEmailMouseEnter}
+                  onMouseLeave={handleEmailMouseLeave}>
+                     <img className={`h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 ${isEmailScaled ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/mail.png?alt=media&token=6279881c-fd50-4212-88dc-9a6a11fdf4d9" alt="Email Icon" />
                   </a>
-                  <a href="tel:+447500370660">
-                    <img className="h-6 w-6 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 animate-grow" src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/material.png?alt=media&token=7c35062f-4839-4fa8-96af-69eeee22a585" alt="Phone Icon" />
+                  <a href="tel:+447500370660"
+                  target="_blank"
+                  onMouseEnter={handleCallMouseEnter}
+                  onMouseLeave={handleCallMouseLeave}
+                  >
+                     <img className={`h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 ${isCallScaled ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/material.png?alt=media&token=7c35062f-4839-4fa8-96af-69eeee22a585" alt="Phone Icon" />
                   </a>
                 </div>
               </div>
