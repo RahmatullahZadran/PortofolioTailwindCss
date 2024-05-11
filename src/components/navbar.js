@@ -16,13 +16,31 @@ function classNames(...classes) {
 export default function Example() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isGithubScaled, setIsGithubScaled] = useState(false);
+  const [isLinkedinScaled, setIsLinkedinScaled] = useState(false);
+
+  const handleGithubMouseEnter = () => {
+    setIsGithubScaled(true);
+  };
+
+  const handleGithubMouseLeave = () => {
+    setIsGithubScaled(false);
+  };
+
+  const handleLinkedinMouseEnter = () => {
+    setIsLinkedinScaled(true);
+  };
+
+  const handleLinkedinMouseLeave = () => {
+    setIsLinkedinScaled(false);
+  };
 
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex items-center justify-between h-16">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
+            <div className="relative flex items-center justify-between h-16 ">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
@@ -33,10 +51,10 @@ export default function Example() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start ">
                 <div className="flex-shrink-0 flex items-center">
                 </div>
-                <div className="hidden sm:block sm:ml-6">
+                <div className="hidden sm:block sm:ml-6 ">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
@@ -54,7 +72,7 @@ export default function Example() {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 space-x-3 sm:static sm:inset-auto sm:ml-2 sm:pr-0">
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 space-x-3 sm:static sm:inset-auto sm:ml-2 sm:pr-0 animate-slideInRight">
                 <button
                   onClick={() => setIsDarkMode(!isDarkMode)}
                   className="text-gray-400 hover:text-white focus:outline-none mr-4"
@@ -85,17 +103,27 @@ export default function Example() {
                   </svg>
                 </button>
                 <div className="hidden sm:flex items-center space-x-3">
-                  <a href="https://github.com/RahmatullahZadran" target="_blank">
-                    <img className="h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8" src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/github%20(1).png?alt=media&token=eb89d9c4-1c80-4be8-8124-fc6dceb7add8" alt="GitHub Icon" />
+                  <a
+                    href="https://github.com/RahmatullahZadran"
+                    target="_blank"
+                    onMouseEnter={handleGithubMouseEnter}
+                    onMouseLeave={handleGithubMouseLeave}
+                  >
+                    <img className={`h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 ${isGithubScaled ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/github%20(1).png?alt=media&token=eb89d9c4-1c80-4be8-8124-fc6dceb7add8" alt="GitHub Icon" />
                   </a>
-                  <a href="https://www.linkedin.com/in/rahmatullah-zadran-10b8391a6/" target="_blank">
-                    <img className="h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 animate-fadeIn" src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/linkedin%20(1).png?alt=media&token=605eab92-1812-4fde-a52b-fa278997c678" alt="LinkedIn Icon" />
+                  <a
+                    href="https://www.linkedin.com/in/rahmatullah-zadran-10b8391a6/"
+                    target="_blank"
+                    onMouseEnter={handleLinkedinMouseEnter}
+                    onMouseLeave={handleLinkedinMouseLeave}
+                  >
+                    <img className={`h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 ${isLinkedinScaled ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/linkedin%20(1).png?alt=media&token=605eab92-1812-4fde-a52b-fa278997c678" alt="LinkedIn Icon" />
                   </a>
                   <a href="mailto:rahmatullahzadran@outlook.com">
-                    <img className="h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8" src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/mail.png?alt=media&token=6279881c-fd50-4212-88dc-9a6a11fdf4d9" alt="Email Icon" />
+                    <img className="h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 animate-grow" src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/mail.png?alt=media&token=6279881c-fd50-4212-88dc-9a6a11fdf4d9" alt="Email Icon" />
                   </a>
                   <a href="tel:+447500370660">
-                    <img className="h-6 w-6 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8" src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/material.png?alt=media&token=7c35062f-4839-4fa8-96af-69eeee22a585" alt="Phone Icon" />
+                    <img className="h-6 w-6 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 animate-grow" src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/material.png?alt=media&token=7c35062f-4839-4fa8-96af-69eeee22a585" alt="Phone Icon" />
                   </a>
                 </div>
               </div>

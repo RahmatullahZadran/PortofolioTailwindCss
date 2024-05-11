@@ -7,9 +7,19 @@ module.exports = {
           '0%': { transform: 'translateX(-100%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
+        slideInRight: {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        grow: {
+          '0%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(1.1)' },
+        },
       },
       animation: {
         slideInLeft: 'slideInLeft 0.3s ease-out',
+        slideInRight: 'slideInRight 0.3s ease-out',
+        grow: 'grow 0.3s ease-out',
       },
     },
   },
