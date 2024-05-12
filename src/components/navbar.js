@@ -1,11 +1,12 @@
 import { Fragment, useState } from 'react';
 import { Disclosure, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon, MoonIcon, SunIcon } from '@heroicons/react/outline';
+import { Link } from 'react-router-dom';
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
+  { name: 'Profile', href: './midle', current: true },
   { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
+  { name: 'Projects', href: '/projects', current: false },
   { name: 'Calendar', href: '#', current: false },
 ];
 
