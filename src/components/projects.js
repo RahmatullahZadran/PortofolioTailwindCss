@@ -79,7 +79,7 @@
             <div className="mx-auto  grid max-w-7xl gap-x-8 gap-y-8 px-6 lg:px-8 lg:px-8 xl:grid-cols-5">
                 {/* Project Section */}
                 <div className="max-w-2xl md:col-start-1 lg:col-start-1 xl:col-start-1">
-                <h2 className="text-3xl animated-fade-in-up  font-bold tracking-tight text-white sm:text-4xl ">My Projects</h2>
+                <h2 className="text-3xl animated-fade-in-up  animete-slideInRight animate-slideInLeft font-bold tracking-tight text-white sm:text-4xl ">My Projects</h2>
                 </div>
     
                 {/* People Section */}
@@ -87,9 +87,9 @@
     {people.map((person) => (
         <li key={person.name}>
             <div className="flex flex-col items-start"> 
-                <img className="h-60 w-80 rounded " src={person.imageUrl} alt={person.id} />
+                <img className="h-60 w-80 rounded  animate-slideInTop" src={person.imageUrl} alt={person.id} />
                 <div>
-                    <h3 className="text-lg font-semibold text-white">{person.name}</h3>
+                    <h3 className="text-lg animate-slideInLeft font-semibold text-white">{person.name}</h3>
                     <a
                         href={person.gitHubUrl}
                         target="_blank"
