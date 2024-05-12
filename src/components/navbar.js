@@ -1,14 +1,17 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useState, } from 'react';
 import { Disclosure, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon, MoonIcon, SunIcon } from '@heroicons/react/outline';
 import { Link } from 'react-router-dom';
 
+
+
 const navigation = [
-  { name: 'Profile', href: './midle', current: true },
- 
+  { name: 'Profile', href: './midle', current: false },
   { name: 'Projects', href: '/projects', current: false },
+  { name: 'Videos', href: '/youtube', current: false },
 
 ];
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -23,9 +26,21 @@ export default function Example() {
   const [isEmailScaled, setIsEmailScaled] = useState(false);
   const [isYoutubeScaled, setIsYoutubeScaled] = useState(false);
   
+ const handleNavigationClick = (index) => {
+    setNavigation((prevNavigation) =>
+      prevNavigation.map((item, i) => ({
+        ...item,
+        current: i === index,
+      }))
+    );
+  };
 
-
-
+const setNavigation = (navigation) => {
+  return navigation.map((item) => ({
+    ...item,
+    current: true,
+  }));
+}
   
 
   const handleYoutubeMouseEnter = () => {

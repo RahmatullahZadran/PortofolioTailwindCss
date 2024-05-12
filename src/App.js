@@ -5,6 +5,7 @@ import Navbar from './components/navbar';
 import Midle from './components/midle';
 import Projects from './components/projects';
 import Footer from './components/footer';
+import Youtube from './components/youtube';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Midle />} />
           <Route path="/midle" element={<Midle />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/youtube" element={<Youtube />} />
         </Routes>
         <Footer />
       </div>

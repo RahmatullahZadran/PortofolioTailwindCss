@@ -75,7 +75,7 @@
           setGithubScaled((prev) => ({ ...prev, [id]: false }));
         };
         return (
-            <div className="bg-gray-900 py-10 sm:py-10 ">
+            <div className="bg-gray-900 py-10 sm:py-10  ">
             <div className="mx-auto  grid max-w-7xl gap-x-8 gap-y-8 px-6 lg:px-8 lg:px-8 xl:grid-cols-5">
                 {/* Project Section */}
                 <div className="max-w-2xl md:col-start-1 lg:col-start-1 xl:col-start-1">
