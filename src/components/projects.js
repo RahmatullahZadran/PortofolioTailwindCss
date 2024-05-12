@@ -96,7 +96,7 @@
                         onMouseEnter={() => handleGithubMouseEnter(person.id)}
                         onMouseLeave={() => handleGithubMouseLeave(person.id)}
                     >
-                        <img className={`h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 lg:h-5 lg:w-5 xl:h-6 xl:w-6 ${githubScaled[person.id] ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/github%20(1).png?alt=media&token=eb89d9c4-1c80-4be8-8124-fc6dceb7add8" alt="GitHub Icon" />
+                        <img className={`h-4 w-4 sm:h-5 sm:w-5 animate-jumpy md:h-5 md:w-5 lg:h-5 lg:w-5 xl:h-6 xl:w-6 ${githubScaled[person.id] ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/github%20(1).png?alt=media&token=eb89d9c4-1c80-4be8-8124-fc6dceb7add8" alt="GitHub Icon" />
                     </a>
                 </div>
             </div>
