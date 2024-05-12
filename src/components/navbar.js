@@ -21,6 +21,21 @@ export default function Example() {
   const [isLinkedinScaled, setIsLinkedinScaled] = useState(false);
   const [isCallScaled, setIsCallScaled] = useState(false);
   const [isEmailScaled, setIsEmailScaled] = useState(false);
+  const [isYoutubeScaled, setIsYoutubeScaled] = useState(false);
+  
+
+
+
+  
+
+  const handleYoutubeMouseEnter = () => {
+    setIsYoutubeScaled(true);
+  };
+
+
+  const handleYoutubeMouseLeave = () => {
+    setIsYoutubeScaled(false);
+  };
 
   const handleGithubMouseEnter = () => {
     setIsGithubScaled(true);
@@ -153,12 +168,12 @@ export default function Example() {
                   >
                      <img className={`h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 ${isCallScaled ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/material.png?alt=media&token=7c35062f-4839-4fa8-96af-69eeee22a585" alt="Phone Icon" />
                   </a>
-                  <a href="tel:+447500370660"
+                  <a href="https://www.youtube.com/channel/UCMfIsxDNdoiZF8DZYywOXtw"
                   target="_blank"
-                  onMouseEnter={handleCallMouseEnter}
-                  onMouseLeave={handleCallMouseLeave}
+                  onMouseEnter={handleYoutubeMouseEnter}
+                  onMouseLeave={handleYoutubeMouseLeave}
                   >
-                     <img className={`h-7 w-8 md:h-8 md:w-9 lg:h-9 lg:w-10 ${isCallScaled ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/video3.png?alt=media&token=fa11a5d0-d4e1-4eb3-8a27-2c18d7b78b2c" alt="Phone Icon" />
+                     <img className={`h-7 w-8 md:h-8 md:w-9 lg:h-9 lg:w-10 ${isYoutubeScaled ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/video3.png?alt=media&token=fa11a5d0-d4e1-4eb3-8a27-2c18d7b78b2c" alt="Phone Icon" />
                   </a>
                   
                 </div>
@@ -219,6 +234,13 @@ export default function Example() {
                 className="block px-4 py-2 text-gray-400 hover:text-white "
               >
                 Phone
+              </a>
+              <a 
+              href="https://www.youtube.com/channel/UCMfIsxDNdoiZF8DZYywOXtw"
+              target="_blank"
+              className="block px-4 py-2 text-gray-400 hover:text-white "
+              >
+                YouTube
               </a>
             </div>
           )}
