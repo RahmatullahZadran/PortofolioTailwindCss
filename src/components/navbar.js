@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 
 const navigation = [
   { name: 'Profile', href: './midle', current: true },
-  { name: 'Team', href: '#', current: false },
+ 
   { name: 'Projects', href: '/projects', current: false },
-  { name: 'Calendar', href: '#', current: false },
+
 ];
 
 function classNames(...classes) {
