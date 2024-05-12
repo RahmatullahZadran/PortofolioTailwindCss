@@ -153,6 +153,14 @@ export default function Example() {
                   >
                      <img className={`h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 ${isCallScaled ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/material.png?alt=media&token=7c35062f-4839-4fa8-96af-69eeee22a585" alt="Phone Icon" />
                   </a>
+                  <a href="tel:+447500370660"
+                  target="_blank"
+                  onMouseEnter={handleCallMouseEnter}
+                  onMouseLeave={handleCallMouseLeave}
+                  >
+                     <img className={`h-7 w-8 md:h-8 md:w-9 lg:h-9 lg:w-10 ${isCallScaled ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/video3.png?alt=media&token=fa11a5d0-d4e1-4eb3-8a27-2c18d7b78b2c" alt="Phone Icon" />
+                  </a>
+                  
                 </div>
               </div>
             </div>

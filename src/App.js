@@ -12,6 +12,7 @@ function App() {
       <div>
         <Navbar />
         <Routes>
+          <Route path="/" element={<Midle />} />
           <Route path="/midle" element={<Midle />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
