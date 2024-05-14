@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import {useState } from 'react';
 
 const people = [
 {   
@@ -90,9 +90,11 @@ export default function Example() {
             <img className="h-60 w-80 rounded  animate-slideInTop" src={person.imageUrl} alt={person.id} />
             <div>
                 <h3 className="text-lg animate-slideInLeft font-semibold text-white">{person.name}</h3>
+                <p className="text-sm text-gray-500">{person.description
+}</p>
                 <a
                     href={person.gitHubUrl}
-                    target="_blank"
+                    target=""
                     onMouseEnter={() => handleGithubMouseEnter(person.id)}
                     onMouseLeave={() => handleGithubMouseLeave(person.id)}
                 >
