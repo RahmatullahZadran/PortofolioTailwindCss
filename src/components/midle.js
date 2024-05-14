@@ -12,14 +12,14 @@ export default function Example() {
               alt=""
             />
             <div className="mt-1 flex items-center justify-center space-x-3 text-base">
-              <div className="font-semibold text-white">Rahmatullah Zadran</div>
+              <div className="font-semibold animate-slideInBottom text-white">Rahmatullah Zadran</div>
               <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-white">
                 <circle cx={1} cy={1} r={1} />
               </svg>
-              <div className="text-white font-medium">FrontEnd Developer/Software Developer</div>
+              <div className="text-white animate-slideInBottom font-medium">FrontEnd Developer/Software Developer</div>
             </div>
           </figcaption>
-          <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+          <blockquote className="text-center text-xl animate-slideInBottom font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
             <p>
               I am the biggest man there is. I can fly and cry
             </p>

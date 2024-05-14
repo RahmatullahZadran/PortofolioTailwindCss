@@ -232,7 +232,7 @@ const setNavigation = (navigation) => {
                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/rahmatullah-zadran-10b8391a6/"
+                href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
                 target="_blank"
                 className="block px-4 py-2 text-gray-400 hover:text-white "
               >
