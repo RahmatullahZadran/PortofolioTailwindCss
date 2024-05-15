@@ -97,7 +97,7 @@ export default function Example() {
                       onMouseLeave={() => handleGithubMouseLeave(project.id)}
                       onClick={(e) => e.stopPropagation()} // Prevent triggering the project image click event
                     >
-                      <img className={`h-4 w-4 sm:h-5 sm:w-5 animate-jumpy md:h-5 md:w-5 lg:h-5 lg:w-5 xl:h-6 xl:w-6 ${githubScaled[project.id] ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/github%20(1).png?alt=media&token=eb89d9c4-1c80-4be8-8124-fc6dceb7add8" alt="GitHub Icon" />
+                      <img className={`h-6 w-6 sm:h-5 sm:w-5 md:h-5 md:w-5 lg:h-6 lg:w-6 xl:h-7 xl:w-7  animate-jumpy ${githubScaled[project.id] ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/github%20(1).png?alt=media&token=eb89d9c4-1c80-4be8-8124-fc6dceb7add8" alt="GitHub Icon" />
                     </a>
                     {project.url ? (
                       <a
@@ -108,10 +108,10 @@ export default function Example() {
                         onMouseLeave={() => handleUrlMouseLeave(project.id)}
                         onClick={(e) => e.stopPropagation()} // Prevent triggering the project image click event
                       >
-                        <img className={`h-4 w-4 sm:h-5 sm:w-5 animate-jumpy md:h-5 md:w-5 lg:h-5 lg:w-5 xl:h-6 xl:w-6 ${urlScaled[project.id] ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/link%20(1).png?alt=media&token=6f3eebed-d3f3-4d0d-b1f0-74c6f22c71db" alt="URL Icon" />
+                        <img className={`h-6 w-6 sm:h-5 sm:w-5 md:h-5 md:w-5 lg:h-6 lg:w-6 xl:h-7 xl:w-7  animate-jumpy ${urlScaled[project.id] ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/link%20(1).png?alt=media&token=6f3eebed-d3f3-4d0d-b1f0-74c6f22c71db" alt="URL Icon" />
                       </a>
                     ) : (
-                      <img className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 animate-jumpy lg:h-5 lg:w-5 xl:h-6 xl:w-6" src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/chain.png?alt=media&token=e6853ad5-9c7b-40e3-94b0-6e4a4231e37d" alt="Placeholder Icon" />
+                      <img className="h-6 w-6 sm:h-5 sm:w-5 md:h-5 md:w-5 lg:h-6 lg:w-6 xl:h-7 xl:w-7  animate-jumpy" src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/chain.png?alt=media&token=e6853ad5-9c7b-40e3-94b0-6e4a4231e37d" alt="Placeholder Icon" />
                     )}
                   </div>
                 </div>
