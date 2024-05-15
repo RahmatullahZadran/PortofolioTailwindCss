@@ -33,7 +33,12 @@ function ProjectQuickView({ project, isOpen, onClose }) {
               <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:max-w-lg">
                 <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start">
-                    <div className="mt-3 text-center sm:mt-0 sm:text-left">
+                    {project.image && (
+                      <div className="mx-auto flex-shrink-0  flex items-center justify-center h-60 w-40 overflow-hidden sm:mx-0 sm:h-60  sm:w-60">
+                        <img src={project.image} alt={project.name} className="h-full w-full object-cover" />
+                      </div>
+                    )}
+                    <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                       <Dialog.Title as="h3" className="text-lg leading-6 font-medium text-gray-900">
                         {project.name}
                       </Dialog.Title>
@@ -67,7 +72,7 @@ function ProjectQuickView({ project, isOpen, onClose }) {
                               rel="noopener noreferrer"
                               className="text-indigo-600 hover:text-indigo-900"
                             >
-                              View on GitHub
+                              <img className={`h-4 w-4 sm:h-5 sm:w-5 animate-jumpy md:h-5 md:w-5 lg:h-5 lg:w-5 xl:h-6 xl:w-6 ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/link%20(1).png?alt=media&token=6f3eebed-d3f3-4d0d-b1f0-74c6f22c71db" alt="URL Icon" />
                             </a>
                           </div>
                         )}
