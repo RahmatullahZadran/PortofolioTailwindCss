@@ -71,7 +71,7 @@ function ProjectQuickView({ project, isOpen, onClose, skills }) {
                       </div>
                       <div className="mt-4">
                         <h4 className="text-sm font-medium text-white">Skills</h4>
-                        <div className="flex justify-center mt-1">
+                        <div className="flex justify-start mt-1">
                           {project.skills && project.skills.map((skill, index) => (
                             <img key={index} src={getSkillIcon(skill)} alt={skill} className="h-8 w-8 sm:h-5 sm:w-5 animate-jumpy md:h-6 md:w-6 lg:h-7 lg:w-7 xl:h-8 xl:w-8 mr-2" />
                           ))}
