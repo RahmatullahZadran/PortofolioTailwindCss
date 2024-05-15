@@ -33,7 +33,7 @@ export default function Example() {
       const data = snapshot.val();
       if (data) {
         const projectsArray = Object.values(data);
-        setProjects(projectsArray);
+        setProjects(projectsArray.reverse()); // Reverse the array here
       }
     });
 
