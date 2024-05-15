@@ -87,7 +87,7 @@ export default function Example() {
                 />
                 <div>
                   <h3 className="text-lg animate-slideInLeft font-semibold text-white">{project.name}</h3>
-                  <p className="text-base text-gray-400">{project.description}</p>
+                  <p className="text-base text-gray-400">{project.info}</p>
                   <div className="flex space-x-2">
                     <a
                       href={project.githubUrl}

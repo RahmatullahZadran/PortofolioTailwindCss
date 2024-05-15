@@ -6,7 +6,7 @@
         "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "url": "https://example.com/clock",
         "githubUrl": "https://github.com/RahmatullahZadran",
-        "description": "A simple clock app with a beautiful UI",
+        "info": "A simple clock app with a beautiful UI",
         "skills": ["React", "Tailwind CSS", "JavaScript"]
       },
       {
@@ -15,8 +15,9 @@
         "image": "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "url": "https://example.com/chat-app",
         "githubUrl": "https://github.com/RahmatullahZadran",
-        "description": "A simple chat app with a beautiful UI",
-        "skills": ["React", "Tailwind CSS", "JavaScript"]
+        "info": "A simple chat app with a beautiful UI",
+        "skills": ["React", "Tailwind CSS", "JavaScript"],
+        "description": "A simple chat app with a beautiful UIsad asd asd asd as das dgas dasdkjash kdhsa khdkash dkhsad"
       },
       {
         "id": 3,
@@ -24,7 +25,7 @@
         "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "url": "https://example.com/clock",
         "githubUrl": "https://github.com/RahmatullahZadran",
-        "description": "A simple clock app with a beautiful UI",
+        "info": "A simple clock app with a beautiful UI",
         "skills": ["React", "Tailwind CSS", "JavaScript"]
       },
       {
@@ -33,7 +34,7 @@
         "image": "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "url": "https://example.com/chat-app",
         "githubUrl": "https://github.com/RahmatullahZadran",
-        "description": "A simple chat app with a beautiful UI",
+        "info": "A simple chat app with a beautiful UI",
         "skills": ["React", "Tailwind CSS", "JavaScript"]
       },{
         "id": 4,
@@ -41,7 +42,7 @@
         "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "url": "https://example.com/clock",
         "githubUrl": "https://github.com/RahmatullahZadran",
-        "description": "A simple clock app with a beautiful UI",
+        "info": "A simple clock app with a beautiful UI",
         "skills": ["React", "Tailwind CSS", "JavaScript"]
       },
       {
@@ -50,7 +51,7 @@
         "image": "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "url": "https://example.com/chat-app",
         "githubUrl": "https://github.com/RahmatullahZadran",
-        "description": "A simple chat app with a beautiful UI",
+        "info": "A simple chat app with a beautiful UI",
         "skills": ["React", "Tailwind CSS", "JavaScript"]
       }
     ]
