@@ -54,6 +54,25 @@
         "info": "A simple chat app with a beautiful UI",
         "skills": ["React", "Tailwind CSS", "JavaScript"]
       }
-    ]
+   
+   ],
+   "Skills": [
+     {
+       "id": 1,
+       "name": "React",
+       "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+       "Icon": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+     },
+     {
+       "id": 2,
+       "name": "Tailwind CSS",
+       "Icon": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+     },
+     {
+       "id": 3,
+       "name": "JavaScript",
+       "Icon": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+     }
+   ]
   }
   

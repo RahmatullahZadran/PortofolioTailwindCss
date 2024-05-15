@@ -26,6 +26,7 @@ export default function Example() {
   const [urlScaled, setUrlScaled] = useState({});
   const [selectedProject, setSelectedProject] = useState(null);
   const [isQuickViewOpen, setIsQuickViewOpen] = useState(false);
+  const [skills, setSkills] = useState([]);
 
   useEffect(() => {
     const projectsRef = db.ref('Projects');
@@ -37,8 +38,18 @@ export default function Example() {
       }
     });
 
+    const skillsRef = db.ref('Skills');
+    skillsRef.on('value', (snapshot) => {
+      const data = snapshot.val();
+      if (data) {
+        const skillsArray = Object.values(data);
+        setSkills(skillsArray);
+      }
+    });
+
     return () => {
       projectsRef.off('value');
+      skillsRef.off('value');
     };
   }, []);
 
@@ -87,7 +98,7 @@ export default function Example() {
                 />
                 <div>
                   <h3 className="text-lg animate-slideInLeft font-semibold text-white">{project.name}</h3>
-                  <p className="text-base text-gray-400">{project.info}</p>
+                  <p className="text-base animate-slideInLeft text-gray-400">{project.info}</p>
                   <div className="flex space-x-2">
                     <a
                       href={project.githubUrl}
@@ -126,6 +137,7 @@ export default function Example() {
           project={selectedProject}
           isOpen={isQuickViewOpen}
           onClose={handleQuickViewClose}
+          skills={skills} // Pass skills as a prop
         />
       )}
     </div>
