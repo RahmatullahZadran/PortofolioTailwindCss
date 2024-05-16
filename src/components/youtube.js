@@ -1,39 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/database';
-
-const firebaseConfig = {
-  apiKey: "AIzaSyA4ZM1BNuWLKae1O5R_gxdAJNiloY9s1qk",
-  authDomain: "protofolio-44836.firebaseapp.com",
-  databaseURL: "https://protofolio-44836-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "protofolio-44836",
-  storageBucket: "protofolio-44836.appspot.com",
-  messagingSenderId: "65897675902",
-  appId: "1:65897675902:web:b3cecbb868e83a2a2f6c2f",
-  measurementId: "G-LTS8XXGHDY"
-};
-
-if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
-}
-
-const db = firebase.database();
+import { fetchVideos } from './firebase';
 
 export default function Example() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    const videosRef = db.ref('Youtub');
-    videosRef.on('value', (snapshot) => {
-      const data = snapshot.val();
-      if (data) {
-        const videosArray = Object.values(data);
-        setVideos(videosArray.reverse());
-      }
-    });
+    const unsubscribeVideos = fetchVideos(setVideos);
 
     return () => {
-      videosRef.off('value');
+      unsubscribeVideos();
     };
   }, []);
 
