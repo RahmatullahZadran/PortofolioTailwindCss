@@ -104,7 +104,7 @@ export default function Example() {
           project={selectedProject}
           isOpen={isQuickViewOpen}
           onClose={handleQuickViewClose}
-          skills={skills} // Pass skills as a prop
+          skills={skills} 
         />
       )}
     </div>

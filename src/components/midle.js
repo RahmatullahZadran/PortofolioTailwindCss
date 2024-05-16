@@ -24,8 +24,6 @@ export default function Example() {
               I am the biggest man there is. I can fly and cry
             </p>
           </blockquote>
-
-         
         </figure>
       </div>
     </section>

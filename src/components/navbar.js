@@ -1,5 +1,5 @@
 import { Fragment, useState, } from 'react';
-import { Disclosure, Transition } from '@headlessui/react';
+import { Disclosure,} from '@headlessui/react';
 import { MenuIcon, XIcon, MoonIcon, SunIcon } from '@heroicons/react/outline';
 
 
@@ -9,8 +9,6 @@ const navigation = [
   { name: 'Profile', href: './midle', current: false },
   { name: 'Projects', href: '/projects', current: false },
   { name: 'Videos', href: '/youtube', current: false },
-  
-
 ];
 
 
@@ -27,23 +25,6 @@ export default function Example() {
   const [isEmailScaled, setIsEmailScaled] = useState(false);
   const [isYoutubeScaled, setIsYoutubeScaled] = useState(false);
   
- const handleNavigationClick = (index) => {
-    setNavigation((prevNavigation) =>
-      prevNavigation.map((item, i) => ({
-        ...item,
-        current: i === index,
-      }))
-    );
-  };
-
-const setNavigation = (navigation) => {
-  return navigation.map((item) => ({
-    ...item,
-    current: true,
-  }));
-}
-  
-
   const handleYoutubeMouseEnter = () => {
     setIsYoutubeScaled(true);
   };
@@ -156,7 +137,7 @@ const setNavigation = (navigation) => {
                 <div className="hidden sm:flex items-center space-x-3">
                   <a
                     href="https://github.com/RahmatullahZadran"
-                    target="_blank"
+                    target="blank"
                     onMouseEnter={handleGithubMouseEnter}
                     onMouseLeave={handleGithubMouseLeave}
                   >
@@ -164,7 +145,7 @@ const setNavigation = (navigation) => {
                   </a>
                   <a
                     href="https://www.linkedin.com/in/rahmatullah-zadran-10b8391a6/"
-                    target="_blank"
+                    target="blank"
                     onMouseEnter={handleLinkedinMouseEnter}
                     onMouseLeave={handleLinkedinMouseLeave}
                   >
@@ -172,20 +153,20 @@ const setNavigation = (navigation) => {
                   </a>
                   
                   <a href="mailto:rahmatullahzadran@outlook.com"
-                  target="_blank"
+                  target="blank"
                   onMouseEnter={handleEmailMouseEnter}
                   onMouseLeave={handleEmailMouseLeave}>
                      <img className={`h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 ${isEmailScaled ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/mail.png?alt=media&token=6279881c-fd50-4212-88dc-9a6a11fdf4d9" alt="Email Icon" />
                   </a>
                   <a href="tel:+447500370660"
-                  target="_blank"
+                  target="blank"
                   onMouseEnter={handleCallMouseEnter}
                   onMouseLeave={handleCallMouseLeave}
                   >
                      <img className={`h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 ${isCallScaled ? 'scale-110' : ''}`} src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/material.png?alt=media&token=7c35062f-4839-4fa8-96af-69eeee22a585" alt="Phone Icon" />
                   </a>
                   <a href="https://www.youtube.com/channel/UCMfIsxDNdoiZF8DZYywOXtw"
-                  target="_blank"
+                  target="blank"
                   onMouseEnter={handleYoutubeMouseEnter}
                   onMouseLeave={handleYoutubeMouseLeave}
                   >
@@ -196,45 +177,18 @@ const setNavigation = (navigation) => {
               </div>
             </div>
           </div>
-          <Transition
-            show={open}
-            enter="transition-opacity duration-75"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="transition-opacity duration-150"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <Disclosure.Panel className="sm:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                      'block px-3 py-2 rounded-md text-base font-medium'
-                    )}
-                    aria-current={item.current ? 'page' : undefined}
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-            </Disclosure.Panel>
-          </Transition>
           {isDropdownOpen && (
             <div className="sm:hidden absolute right-0 mt-2 w-48 bg-gray-800 rounded-md overflow-hidden z-10 ">
               <a
                 href="https://github.com/RahmatullahZadran"
-                target="_blank"
+                target="blank"
                 className="block px-4 py-2 text-gray-400 hover:text-white "
               >
                 GitHub
               </a>
               <a
                 href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-                target="_blank"
+                target="blank"
                 className="block px-4 py-2 text-gray-400 hover:text-white "
               >
                 LinkedIn
@@ -253,7 +207,7 @@ const setNavigation = (navigation) => {
               </a>
               <a 
               href="https://www.youtube.com/channel/UCMfIsxDNdoiZF8DZYywOXtw"
-              target="_blank"
+              target="blank"
               className="block px-4 py-2 text-gray-400 hover:text-white "
               >
                 YouTube
