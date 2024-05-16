@@ -35,12 +35,12 @@ function ProjectQuickView({ project, isOpen, onClose, skills }) {
           <div className="flex min-h-full items-center justify-center p-4 text-center sm:p-6">
             <Transition.Child
             >
-              <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-gray-800 text-left shadow-xl transition-all sm:my-8 sm:max-w-xlg">
+              <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-gray-800 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-3xl">
                 <div className="bg-gray-800 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start">
                     {project.image && (
                       <div className="mx-auto flex-shrink-0 flex items-center justify-center h-60 w-40 overflow-hidden sm:mx-0 sm:h-60 sm:w-60">
-                        <img src={project.image} alt={project.name} className="h-full w-full object-cover" />
+                        <img src={project.image} alt={project.name} className="h-full w-full" />
                       </div>
                     )}
                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
