@@ -28,7 +28,7 @@ export default function Example() {
       const data = snapshot.val();
       if (data) {
         const videosArray = Object.values(data);
-        setVideos(videosArray.reverse()); // Reverse the array here if you want the latest videos first
+        setVideos(videosArray.reverse());
       }
     });
 
@@ -37,27 +37,35 @@ export default function Example() {
     };
   }, []);
 
+  const getEmbedUrl = (url) => {
+    const urlParts = url.split('v=');
+    if (urlParts.length > 1) {
+      const videoId = urlParts[1].split('&')[0];
+      return `https://www.youtube.com/embed/${videoId}`;
+    }
+    return url;
+  };
+
   return (
     <div className="bg-gray-900 py-10 sm:py-10">
-      <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-8 px-6 lg:px-8 lg:px-8 xl:grid-cols-5">
-        <div className="max-w-2xl md:col-start-1 lg:col-start-1 xl:col-start-1">
-          <h2 className="text-3xl animated-fade-in-up animete-slideInRight animate-slideInLeft font-bold tracking-tight text-white sm:text-4xl">My YouTube Videos</h2>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="max-w-2xl md:col-start-1 lg:col-start-1 xl:col-start-1 mb-6">
+          <h2 className="text-3xl animated-fade-in-up animate-slideInRight font-bold tracking-tight text-white sm:text-4xl">My YouTube Videos</h2>
         </div>
 
-        <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 sm:gap-y-3 xl:col-span-5">
+        <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 gap-6 xl:col-span-5">
           {videos.map((video) => (
-            <li key={video.id}>
-              <div className="flex flex-col items-start">
-                <iframe
-                  className="h-60 w-80 sm:h-72 sm:w-80 rounded object-cover animate-slideInTop"
-                  src={video.url.replace("watch?v=", "embed/")}
-                  title={video.name}
-                  allowFullScreen
-                ></iframe>
-                <div>
-                  <h3 className="text-lg animate-slideInLeft font-semibold text-white mt-2">{video.name}</h3>
-                </div>
-              </div>
+            <li key={video.id} className="flex flex-col items-start">
+              <iframe
+                className="w-full h-64 sm:h-80"
+                src={getEmbedUrl(video.url)}
+                title={video.name}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <h3 className="text-lg animate-slideInLeft font-semibold text-white mt-2">{video.name}</h3>
             </li>
           ))}
         </ul>
