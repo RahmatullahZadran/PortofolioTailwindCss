@@ -60,18 +60,30 @@
      {
        "id": 1,
        "name": "React",
-       "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-       "Icon": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-     },
+       "Icon": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/1174949_js_react%20js_logo_react_react%20native_icon.png?alt=media&token=f0c06ff5-8252-4d93-94eb-c98719c8fd93"
+      },
      {
        "id": 2,
        "name": "Tailwind CSS",
-       "Icon": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+       "Icon": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/wind.png?alt=media&token=a8d1635f-6ef9-44cf-8cdd-a692f54f62c5"
      },
      {
        "id": 3,
        "name": "JavaScript",
-       "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/javascript.png?alt=media&token=754ed3ee-7821-4268-a11e-d983c0d0e018"
+       "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/javascript%20(1).png?alt=media&token=5297ffb8-6296-4dd8-b8f0-2d20a1f3a621"
+     },
+     {
+       "id": 4,
+       "name": "Firebase",
+       "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/database-storage.png?alt=media&token=31472333-7d0e-4067-9590-6eb91604fe57"
+     }
+
+   ],
+   "Youtub": [
+     {
+       "id": 1,
+       "name": "React",
+       "url": "https://www.youtube.com/watch?v=Vw7wDy6y6Wc"
      }
    ]
   }
