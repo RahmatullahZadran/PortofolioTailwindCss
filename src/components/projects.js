@@ -56,7 +56,7 @@ export default function Example() {
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 sm:gap-y-3 xl:col-span-5">
           {projects.map((project) => (
             <li key={project.id}>
-              <div className="flex flex-col items-start">
+              <div className="flex flex-col py-2 items-start">
                 <img
                   className="h-60 w-80 sm:h-72 sm:w-80 rounded object-cover animate-slideInTop cursor-pointer"
                   src={project.image}
