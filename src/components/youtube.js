@@ -28,14 +28,14 @@ export default function Example() {
           <h2 className="text-3xl animated-fade-in-up animate-slideInRight font-bold tracking-tight text-white sm:text-4xl">My YouTube Videos</h2>
         </div>
 
-        <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 gap-6 xl:col-span-5">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6 xl:col-span-5">
           {videos.map((video) => (
             <li key={video.id} className="flex flex-col items-start">
               <iframe
                 className="w-full h-64 sm:h-80"
                 src={getEmbedUrl(video.url)}
                 title={video.name}
-                frameBorder="0"
+                
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen

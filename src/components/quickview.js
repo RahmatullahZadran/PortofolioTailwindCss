@@ -39,7 +39,7 @@ function ProjectQuickView({ project, isOpen, onClose, skills }) {
                 <div className="bg-gray-800 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start">
                     {project.image && (
-                      <div className="mx-auto flex-shrink-0 flex items-center justify-center h-60 w-40 overflow-hidden sm:mx-0 sm:h-60 sm:w-60">
+                      <div className="mx-auto flex-shrink-0 flex items-center justify-center h-50 w-80 overflow-hidden sm:h-60 sm:w-90 ">
                         <img src={project.image} alt={project.name} className="h-full w-full" />
                       </div>
                     )}

@@ -56,16 +56,16 @@ export default function Example() {
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 sm:gap-y-3 xl:col-span-5">
           {projects.map((project) => (
             <li key={project.id}>
-              <div className="flex flex-col py-2 items-start">
+              <div className="flex flex-col py-2 items-start ">
                 <img
-                  className="h-60 w-80 sm:h-72 sm:w-80 rounded object-cover animate-slideInTop cursor-pointer"
+                  className="h-40 w-80 sm:h-40 sm:w-80 md:h-40 md:w-80 lg:h-40 lg:w-80 xl:h-40 xl:w-80 rounded object-cover animate-slideInTop cursor-pointer"
                   src={project.image}
                   alt={project.id}
                   onClick={() => handleProjectImageClick(project)}
                 />
                 <div>
                   <h3 className="text-lg animate-slideInLeft font-semibold text-white">{project.name}</h3>
-                  <p className="text-base animate-slideInLeft text-gray-400">{project.info}</p>
+                  <p className=" animate-slideInLeft text-gray-400  sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-base">{project.info}</p>
                   <div className="flex space-x-2">
                     <a
                       href={project.githubUrl}
