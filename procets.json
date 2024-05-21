@@ -89,6 +89,11 @@
       "id": 3,
       "name":"How to Install TailwindCSS from Scratch React in 5 min",
       "url":"https://www.youtube.com/watch?v=YTAehC-cBV0&ab_channel=CodingLounge"
+    },
+    {
+      "id": 4,
+      "name":"How to setup Realtime Database NoSQL(Firebase) for beginners-React",
+      "url":"https://www.youtube.com/watch?v=n6v8dWJUk5k&ab_channel=CodingLounge"
     }
    ]
   }
