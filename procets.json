@@ -2,38 +2,46 @@
     "Projects": [
       {
         "id": 1,
-        "name": "Clock",
-        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/example.png?alt=media&token=001e1c3f-72a7-496d-9bfc-5ba645d6bb41",
-        "url": "https://example.com/clock",
-        "githubUrl": "https://github.com/RahmatullahZadran",
-        "info": "A simple clock app with a beautiful UI",
-        "skills": ["React", "Tailwind CSS", "JavaScript"]
+        "name": "Rahmatullah Zadran Portfolio HTML",
+        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/portofolioHTML.png?alt=media&token=b2236aa2-02bf-4553-b42e-2c3480609f8a",
+        "url": "https://rahmatullahzadran.github.io/Portofolio/",
+        "githubUrl":"https://github.com/RahmatullahZadran/Portofolio",
+        "info": "My first portfolio with HTML and CSS",
+        "skills": ["HTML", "CSS"],
+        "description": "Embarking on my very first portfolio project was a daunting endeavor. Constructing it from scratch using HTML and CSS posed significant challenges, testing my skills and patience. However, despite the initial difficulties, I persevered and successfully crafted a portfolio that showcased my burgeoning talents. Since then, I've traversed a considerable distance on my journey of growth and learning. Each hurdle I've encountered has served as a stepping stone, propelling me forward in honing my craft and expanding my expertise."
       },
       {
         "id": 2,
-        "name": "Chat App",
-        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/example.png?alt=media&token=001e1c3f-72a7-496d-9bfc-5ba645d6bb41",        "url": "https://example.com/chat-app",
-        "githubUrl": "https://github.com/RahmatullahZadran",
-        "info": "A simple chat app with a beautiful UI",
-        "skills": ["React", "Tailwind CSS", "JavaScript"],
-        "description": "A simple chat app with a beautiful UIsad asd asd asd as das dgas dasdkjash kdhsa khdkash dkhsad"
+        "name": "Rahmatullah Zadran Portfolio Bootstrap",
+        "image": "https://console.firebase.google.com/u/0/project/protofolio-44836/storage/protofolio-44836.appspot.com/files",
+        "githubUrl": "https://github.com/RahmatullahZadran/Bootstrap-Portofolio",
+        "url": "https://rahmatullahzadran.github.io/Bootstrap-Portofolio/",
+        "info": "My second portfolio with Bootstrap",
+        "skills": ["HTML", "CSS", "Bootstrap"],
+        "description": "For my second portfolio iteration, I ventured into the realm of Bootstrap, a versatile framework renowned for its robust design components. Transitioning from a simple chat app with a captivating UI, I embraced the power and flexibility of Bootstrap to enhance the aesthetics and functionality of my portfolio. This new approach enabled me to streamline the development process while maintaining a polished and professional appearance. With Bootstrap's rich assortment of pre-built elements and responsive features, I was able to elevate the user experience and showcase my evolving skill set in web development."
       },
       {
         "id": 3,
-        "name": "Clock",
-        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/example.png?alt=media&token=001e1c3f-72a7-496d-9bfc-5ba645d6bb41",        "url": "https://example.com/clock",
+        "name": "Will You Go Out With Me",
+        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/will%20you%20go%20out%20with%20me.png?alt=media&token=a221dff4-66c4-494b-8a15-895f7a4382ea",        
+        "url": "https://rahmatullahzadran.github.io/Will-You-Go-Out-With-Me/",
         "githubUrl": "https://github.com/RahmatullahZadran",
-        "info": "A simple clock app with a beautiful UI",
-        "skills": ["React", "Tailwind CSS", "JavaScript"]
+        "info": "A simple first project with JavaScript",
+        "description": "My inaugural project utilizing JavaScript led me to create a whimsical website titled 'Will You Go Out With Me.' This playful platform allowed users to send invitations for a potential date. However, there was a twist – hovering over the 'no' option triggered a delightful animation, causing it to relocate unpredictably. Building this interactive experience presented a thrilling challenge as I delved into JavaScript's capabilities to infuse dynamism into web pages. Through this project, I not only honed my coding skills but also discovered the joy of crafting engaging user interactions that spark laughter and delight.",
+        "skills": ["HTML","CSS", "JavaScript","Bootstrap"]
       },
       {
-        "id": 3,
-        "name": "Chat App",
-        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/example.png?alt=media&token=001e1c3f-72a7-496d-9bfc-5ba645d6bb41",        "url": "https://example.com/chat-app",
+        "id": 4,
+        "name": "Will You Go Out With Me",
+        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/will%20you%20go%20out%20with%20me.png?alt=media&token=a221dff4-66c4-494b-8a15-895f7a4382ea",        
+        "url": "https://rahmatullahzadran.github.io/Will-You-Go-Out-With-Me/",
         "githubUrl": "https://github.com/RahmatullahZadran",
-        "info": "A simple chat app with a beautiful UI",
-        "skills": ["React", "Tailwind CSS", "JavaScript"]
-      },{
+        "info": "A simple first project with JavaScript",
+        "description": "My inaugural project utilizing JavaScript led me to create a whimsical website titled 'Will You Go Out With Me.' This playful platform allowed users to send invitations for a potential date. However, there was a twist – hovering over the 'no' option triggered a delightful animation, causing it to relocate unpredictably. Building this interactive experience presented a thrilling challenge as I delved into JavaScript's capabilities to infuse dynamism into web pages. Through this project, I not only honed my coding skills but also discovered the joy of crafting engaging user interactions that spark laughter and delight.",
+        "skills": ["HTML","CSS", "JavaScript","Bootstrap"]
+      },
+      
+      {
         "id": 4,
         "name": "Clock",
         "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/example.png?alt=media&token=001e1c3f-72a7-496d-9bfc-5ba645d6bb41",        "url": "https://example.com/clock",
@@ -71,9 +79,24 @@
        "id": 4,
        "name": "Firebase",
        "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/database-storage.png?alt=media&token=31472333-7d0e-4067-9590-6eb91604fe57"
+     },
+     {
+       "id": 5,
+       "name": "HTML",
+       "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/html.png?alt=media&token=b1c6ea3e-5c4a-4392-afa4-8f36bd34b1ed"
+     },
+     {
+       "id": 6,
+       "name": "CSS",
+       "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/css.png?alt=media&token=f7fc9fa6-48fe-4ea0-82b4-a1b18d6817e4"
+     },
+     {
+       "id": 7,
+       "name": "Bootstrap",
+       "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/bootstrap.png?alt=media&token=71244208-f7e0-4998-8b52-47b6a6cdf553"
      }
-
-   ],
+      ],
+  
    "Youtub": [
      {
        "id": 1,
