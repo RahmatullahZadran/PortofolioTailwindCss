@@ -32,31 +32,37 @@
       },
       {
         "id": 4,
+        "name": "Your Next Watch - Project One ",
+        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/project%20one.png?alt=media&token=b7f71111-992f-4ac0-93cc-be33d034faf5",        
+        "url": "https://rahmatullahzadran.github.io/Project-One/",
+        "githubUrl": "https://github.com/RahmatullahZadran/Project-One?tab=readme-ov-file",
+        "info": "My first project with jQuery",
+        "skills": ["HTML","CSS", "JavaScript","Bootstrap", "Jquery"],
+        "description": "For my first bootcamp project, I collaborated with four other team members to create a dynamic movie search website. Using GitHub for version control, we developed the site with HTML, CSS, JavaScript, and jQuery. The website allows users to search for movies, providing detailed information and user-friendly navigation. This project was a significant learning experience, emphasizing the importance of teamwork, communication, and project management. Through this endeavor, I enhanced my technical skills and gained valuable insights into collaborative web development."
+      },
+      
+      {
+        "id": 5,
         "name": "Rahmatullah Zadran Portfolio React",
         "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/react.png?alt=media&token=9afd6e61-ccdf-4f44-80f1-a1ba40386bc4",        
         "url": "https://starlit-douhua-69eafc.netlify.app/#",
         "githubUrl": "https://github.com/RahmatullahZadran/R.Z-Portofolio",
-        "info": "A simple first project with JavaScript",
-        "description": "My inaugural project utilizing JavaScript led me to create a whimsical website titled 'Will You Go Out With Me.' This playful platform allowed users to send invitations for a potential date. However, there was a twist – hovering over the 'no' option triggered a delightful animation, causing it to relocate unpredictably. Building this interactive experience presented a thrilling challenge as I delved into JavaScript's capabilities to infuse dynamism into web pages. Through this project, I not only honed my coding skills but also discovered the joy of crafting engaging user interactions that spark laughter and delight.",
-        "skills": ["HTML","CSS", "JavaScript","Bootstrap", "React"]
-      },
-      
-      {
-        "id": 4,
-        "name": "Clock",
-        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/example.png?alt=media&token=001e1c3f-72a7-496d-9bfc-5ba645d6bb41",        "url": "https://example.com/clock",
-        "githubUrl": "https://github.com/RahmatullahZadran",
-        "info": "A simple clock app with a beautiful UI",
-        "skills": ["React", "Tailwind CSS", "JavaScript"]
+        "info": "My first portfolio with React",
+        "skills": ["HTML","CSS", "JavaScript","Bootstrap", "React"],
+        "description": "For my first portfolio project using React, I ventured into the world of component-based architecture and dynamic user interfaces. React's powerful features enabled me to build a more interactive and efficient portfolio, showcasing my projects and skills with enhanced performance and maintainability. This experience marked a significant milestone in my development journey, allowing me to leverage state management and modular design to create a seamless and engaging user experience. As I continue to refine my expertise, this project stands as a testament to my growth and adaptability in the ever-evolving field of web development."
+
       },
       {
-        "id": 5,
-        "name": "Chat App",
-        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/example.png?alt=media&token=001e1c3f-72a7-496d-9bfc-5ba645d6bb41",        "url": "https://example.com/chat-app",
-        "githubUrl": "https://github.com/RahmatullahZadran",
-        "info": "A simple chat app with a beautiful UI",
-        "skills": ["React", "Tailwind CSS", "JavaScript"]
+        "id": 6,
+        "name": "Smart Gadget - Project Two",
+        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/smart.png?alt=media&token=cec60095-fbb7-415f-9129-d4066da2e3f7",        
+        "url": "https://smart-gadget123.netlify.app/",
+        "githubUrl": "https://github.com/SKhail/smart-gadget",
+        "info": "Second Portofolio with React E Commerce",
+        "skills": ["HTML","CSS", "JavaScript","Tailwind CSS", "React"],
+        "description": "For my second bootcamp project, I worked with four other team members to create a smart gadget e-commerce website. Utilizing GitHub for version control, we developed the site using HTML, CSS, JavaScript, and jQuery. This project involved creating a platform where users could browse and purchase various smart gadgets. The experience honed my technical skills and underscored the importance of collaboration, effective communication, and project management. Our teamwork allowed us to successfully implement a user-friendly interface and a seamless shopping experience, marking a significant step forward in my web development journey."
       }
+   
    
    ],
    "Skills": [
@@ -94,6 +100,11 @@
        "id": 7,
        "name": "Bootstrap",
        "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/bootstrap.png?alt=media&token=71244208-f7e0-4998-8b52-47b6a6cdf553"
+     },
+     {
+       "id": 8,
+       "name": "Jquery",
+       "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/Jquery.png?alt=media&token=b446b2ae-aad3-4fa2-a22b-692c23af3dd3"
      }
       ],
   
