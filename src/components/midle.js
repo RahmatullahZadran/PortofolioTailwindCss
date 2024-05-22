@@ -5,7 +5,7 @@ export default function Example() {
   const { isDarkMode } = useContext(DarkModeContext);
 
   return (
-    <section className={`relative isolate overflow-hidden px-6 py-10 sm:py-10 lg:px-8 ${isDarkMode ? 'bg-gray-900' : 'bg-gray-100'}`}>
+    <section className={`relative isolate overflow-hidden px-6 py-10 sm:py-10 lg:px-8 ${isDarkMode ? 'bg-gray-900' : 'bg-gray-400'}`}>
       <div className={`absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20`} />
       <div className={`absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] ${isDarkMode ? 'bg-slate-300 opacity-20 shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50' : 'bg-white opacity-30 shadow-xl shadow-indigo-200/10 ring-1 ring-gray-300'} sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center`} />
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
