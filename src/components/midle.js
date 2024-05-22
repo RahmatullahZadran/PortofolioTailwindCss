@@ -1,8 +1,13 @@
+import React, { useContext } from 'react';
+import { DarkModeContext } from '../App';
+
 export default function Example() {
+  const { isDarkMode } = useContext(DarkModeContext);
+
   return (
-    <section className="relative isolate overflow-hidden bg-gray-900 px-6 py-10 sm:py-10 lg:px-8">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
-      <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-slate-300 opacity-20 shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
+    <section className={`relative isolate overflow-hidden px-6 py-10 sm:py-10 lg:px-8 ${isDarkMode ? 'bg-gray-900' : 'bg-gray-100'}`}>
+      <div className={`absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20`} />
+      <div className={`absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] ${isDarkMode ? 'bg-slate-300 opacity-20 shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50' : 'bg-white opacity-30 shadow-xl shadow-indigo-200/10 ring-1 ring-gray-300'} sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center`} />
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
         <figure className="mt-1">
           <figcaption className="mt-0">
@@ -12,14 +17,14 @@ export default function Example() {
               alt="Rahmatullah Zadran"
             />
             <div className="mt-1 flex items-center justify-center space-x-3 text-base">
-              <div className="font-semibold animate-slideInBottom text-white">Rahmatullah Zadran</div>
-              <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-white">
+              <div className={`font-semibold animate-slideInBottom ${isDarkMode ? 'text-white' : 'text-black'}`}>Rahmatullah Zadran</div>
+              <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className={`${isDarkMode ? 'fill-white' : 'fill-black'}`}>
                 <circle cx={1} cy={1} r={1} />
               </svg>
-              <div className="text-white animate-slideInBottom font-medium">FrontEnd Developer/Software Developer</div>
+              <div className={`animate-slideInBottom font-medium ${isDarkMode ? 'text-white' : 'text-black'}`}>FrontEnd Developer/Software Developer</div>
             </div>
           </figcaption>
-          <blockquote className="text-start text-xl animate-slideInBottom font-semibold leading-8 py-10 text-white sm:text-2xl sm:leading-9">
+          <blockquote className={`text-start text-xl animate-slideInBottom font-semibold leading-8 py-10 ${isDarkMode ? 'text-white' : 'text-black'} sm:text-2xl sm:leading-9`}>
             <p>
               I am Rahmatullah Zadran, a Front-End Developer with a background in telecommunications engineering.
               I create seamless user experiences using HTML, CSS, JavaScript, TailwindCSS, Bootstrap, and React.
@@ -31,5 +36,5 @@ export default function Example() {
         </figure>
       </div>
     </section>
-  )
+  );
 }

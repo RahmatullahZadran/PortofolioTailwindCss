@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
+import { DarkModeContext } from '../App';
 
 function ProjectQuickView({ project, isOpen, onClose, skills }) {
   const [githubScaled, setGithubScaled] = useState({});
   const [urlScaled, setUrlScaled] = useState({});
+  const { isDarkMode } = useContext(DarkModeContext);
 
   if (!project) return null;
 
@@ -34,8 +36,8 @@ function ProjectQuickView({ project, isOpen, onClose, skills }) {
         <div className="fixed inset-0 z-10 overflow-y-auto">
           <div className="flex min-h-full items-center justify-center p-4 text-center sm:p-6">
             <Transition.Child>
-              <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-gray-800 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-3xl">
-                <div className="bg-gray-800">
+              <Dialog.Panel className={`relative transform overflow-hidden rounded-lg shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-3xl ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
+                <div className={`${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
                   {project.image && (
                     <div className="flex items-center justify-center h-50 w-90 overflow-hidden sm:h-60 sm:w-90 xl:h-80 xl:w-90">
                       <img src={project.image} alt={project.name} className="h-full w-full" />
@@ -43,14 +45,14 @@ function ProjectQuickView({ project, isOpen, onClose, skills }) {
                   )}
                   <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                     <div className="text-center sm:text-left">
-                      <Dialog.Title as="h3" className="text-lg leading-6 font-medium text-white">
+                      <Dialog.Title as="h3" className="text-lg leading-6 font-medium">
                         {project.name}
                       </Dialog.Title>
                       <div className="mt-2">
-                        <p className="text-sm text-gray-300">{project.description}</p>
+                        <p className="text-sm">{project.description}</p>
                       </div>
                       <div className="mt-4">
-                        <h4 className="text-sm font-medium text-white">Skills</h4>
+                        <h4 className="text-sm font-medium">Skills</h4>
                         <div className="flex justify-start mt-1">
                           {project.skills && project.skills.map((skill, index) => (
                             <img 
@@ -65,7 +67,7 @@ function ProjectQuickView({ project, isOpen, onClose, skills }) {
                       </div>
                       {project.githubUrl && (
                         <div className="mt-4">
-                          <div className="text-sm font-medium text-white">Links</div>
+                          <div className="text-sm font-medium">Links</div>
                           <div className="flex space-x-2 mt-1">
                             <a
                               href={project.githubUrl}
@@ -104,7 +106,7 @@ function ProjectQuickView({ project, isOpen, onClose, skills }) {
                       )}
                     </div>
                   </div>
-                  <div className="bg-gray-900 px-4 py-3 sm:flex sm:flex-row-reverse">
+                  <div className={`${isDarkMode ? 'bg-gray-900' : 'bg-gray-200'} px-4 py-3 sm:flex sm:flex-row-reverse`}>
                     <button
                       type="button"
                       className="mt-3 inline-flex w-full justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"

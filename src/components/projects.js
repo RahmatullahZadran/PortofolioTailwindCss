@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import ProjectQuickView from './quickview';
 import { fetchProjects, fetchSkills } from './firebase';
+import { DarkModeContext } from '../App';
 
 export default function Example() {
   const [projects, setProjects] = useState([]);
@@ -10,6 +11,7 @@ export default function Example() {
   const [isQuickViewOpen, setIsQuickViewOpen] = useState(false);
   const [skills, setSkills] = useState([]);
   const [hoveredProject, setHoveredProject] = useState(null);
+  const { isDarkMode } = useContext(DarkModeContext);
 
   useEffect(() => {
     const unsubscribeProjects = fetchProjects(setProjects);
@@ -56,10 +58,10 @@ export default function Example() {
   };
 
   return (
-    <div className="bg-gray-900 py-10 sm:py-10">
+    <div className={`${isDarkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'} py-10 sm:py-10`}>
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-8 px-6 lg:px-8 xl:grid-cols-5">
         <div className="max-w-2xl md:col-start-1 lg:col-start-1 xl:col-start-1">
-          <h2 className="text-3xl animated-fade-in-up animate-slideInRight font-bold tracking-tight text-white sm:text-4xl">My Projects</h2>
+          <h2 className="text-3xl animated-fade-in-up animate-slideInRight font-bold tracking-tight sm:text-4xl">My Projects</h2>
         </div>
 
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 sm:gap-y-3 xl:col-span-5">
@@ -77,8 +79,8 @@ export default function Example() {
                   onClick={() => handleProjectImageClick(project)}
                 />
                 <div>
-                  <h3 className="text-lg animate-slideInLeft font-semibold text-white">{project.name}</h3>
-                  <p className="animate-slideInLeft text-gray-400 sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-base">{project.info}</p>
+                  <h3 className="text-lg animate-slideInLeft font-semibold">{project.name}</h3>
+                  <p className="animate-slideInLeft sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-base">{project.info}</p>
                   <div className="flex space-x-2">
                     <a
                       href={project.githubUrl}

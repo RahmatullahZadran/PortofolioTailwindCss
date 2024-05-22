@@ -36,7 +36,7 @@ export default function Example() {
   const handleCallMouseLeave = () => setIsCallScaled(false);
 
   return (
-    <Disclosure as="nav" className={isDarkMode ? 'bg-gray-800' : 'bg-gray-200'}>
+    <Disclosure as="nav" className={isDarkMode ? 'bg-gray-800 text-white' : 'bg-gray-200 text-black'}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -60,7 +60,7 @@ export default function Example() {
                         key={item.name}
                         to={item.href} // Specify the destination path
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current ? 'bg-gray-900 text-white' : 'text-b hover:bg-gray-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -104,7 +104,7 @@ export default function Example() {
                 <div className="hidden sm:flex items-center space-x-3">
                   <a
                     href="https://github.com/RahmatullahZadran"
-                    target="_blank"
+                    target=""
                     onMouseEnter={handleGithubMouseEnter}
                     onMouseLeave={handleGithubMouseLeave}
                   >
@@ -137,109 +137,105 @@ export default function Example() {
                     onMouseLeave={handleEmailMouseLeave}
                   >
                     <img
-                     
-                     className={`h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 ${
-                      isEmailScaled ? 'scale-110' : ''
-                    }`}
-                    src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/mail.png?alt=media&token=6279881c-fd50-4212-88dc-9a6a11fdf4d9"
-                    alt="Email Icon"
-                  />
-                </a>
-                <a
-                  href="tel:+447500370660"
-                  target="_blank"
-                  onMouseEnter={handleCallMouseEnter}
-                  onMouseLeave={handleCallMouseLeave}
-                >
-                  <img
-                    className={`h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 ${
-                      isCallScaled ? 'scale-110' : ''
-                    }`}
-                    src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/material.png?alt=media&token=7c35062f-4839-4fa8-96af-69eeee22a585"
-                    alt="Phone Icon"
-                  />
-                </a>
-                <a
-                  href="https://www.youtube.com/channel/UCMfIsxDNdoiZF8DZYywOXtw"
-                  target="_blank"
-                  onMouseEnter={handleYoutubeMouseEnter}
-                  onMouseLeave={handleYoutubeMouseLeave}
-                >
-                  <img
-                    className={`h-7 w-8 md:h-8 md:w-9 lg:h-9 lg:w-10 ${
-                      isYoutubeScaled ? 'scale-110' : ''
-                    }`}
-                    src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/video3.png?alt=media&token=fa11a5d0-d4e1-4eb3-8a27-2c18d7b78b2c"
-                    alt="Phone Icon"
-                  />
-                </a>
+                       className={`h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 ${
+                        isEmailScaled ? 'scale-110' : ''
+                      } ${
+                        isDarkMode ? 'text-white' : 'text-black'
+                      }`}
+                      src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/mail.png?alt=media&token=6279881c-fd50-4212-88dc-9a6a11fdf4d9"
+                      alt="Email Icon"
+                    />
+                  </a>
+                  <a
+                    href="tel:+447500370660"
+                    target="_blank"
+                    onMouseEnter={handleCallMouseEnter}
+                    onMouseLeave={handleCallMouseLeave}
+                  >
+                    <img
+                      className={`h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 ${
+                        isCallScaled ? 'scale-110' : ''
+                      } ${
+                        isDarkMode ? 'text-white' : 'text-black'
+                      }`}
+                      src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/material.png?alt=media&token=7c35062f-4839-4fa8-96af-69eeee22a585"
+                      alt="Phone Icon"
+                    />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCMfIsxDNdoiZF8DZYywOXtw"
+                    target="_blank"
+                    onMouseEnter={handleYoutubeMouseEnter}
+                    onMouseLeave={handleYoutubeMouseLeave}
+                  >
+                    <img
+                      className={`h-7 w-8 md:h-8 md:w-9 lg:h-9 lg:w-10 ${
+                        isYoutubeScaled ? 'scale-110' : ''
+                      } ${
+                        isDarkMode ? 'text-white' : 'text-black'
+                      }`}
+                      src="https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/video3.png?alt=media&token=fa11a5d0-d4e1-4eb3-8a27-2c18d7b78b2c"
+                      alt="Phone Icon"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <Transition
-          show={open}
-          enter="transition-opacity duration-75"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-opacity duration-150"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
-                <Link // Use Link instead of anchor tag
-                  key={item.name}
-                  to={item.href} // Specify the destination path
-                  className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-          </Disclosure.Panel>
-        </Transition>
-        {isDropdownOpen && (
-          <div className="sm:hidden absolute right-0 mt-2 w-48 bg-gray-800 rounded-md overflow-hidden z-10">
-            <Link // Use Link instead of anchor tag
-              to="https://github.com/RahmatullahZadran"
-              className="block px-4 py-2 text-gray-400 hover:text-white"
-            >
-              GitHub
-            </Link>
-            <Link // Use Link instead of anchor tag
-              to="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-              className="block px-4 py-2 text-gray-400 hover:text-white"
-            >
-              LinkedIn
-            </Link>
-            <Link // Use Link instead of anchor tag
-              to="mailto:rahmatullahzadran@outlook.com"
-              className="block px-4 py-2 text-gray-400 hover:text-white"
-            >
-              Email
-            </Link>
-            <Link // Use Link instead of anchor tag
-              to="tel:+447500370660"
-              className="block px-4 py-2 text-gray-400 hover:text-white"
-            >
-              Phone
-            </Link>
-            <Link // Use Link instead of anchor tag
-              to="https://www.youtube.com/channel/UCMfIsxDNdoiZF8DZYywOXtw"
-              className="block px-4 py-2 text-gray-400 hover:text-white"
-            >
-              YouTube
-            </Link>
-          </div>
-        )}
-      </>
-    )}
-  </Disclosure>
-);
+          <Transition
+            show={open}
+            enter="transition-opacity duration-75"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition-opacity duration-150"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+           <Disclosure.Panel className={`sm:hidden ${isDarkMode ? 'text-white' : 'text-black'}`}>
+           <div className="px-2 pt-2 pb-3 space-y-1">
+  {navigation.map((item) => (
+    <Link
+      key={item.name}
+      to={item.href}
+      className={classNames(
+        item.current ? 'bg-gray-900 text-white' : 'text-black',
+        isDarkMode ? 'text-white' : 'text-black',
+        'hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+      )}
+      aria-current={item.current ? 'page' : undefined}
+    >
+      {item.name}
+    </Link>
+  ))}
+</div>
+
+</Disclosure.Panel>
+
+          </Transition>
+          {isDropdownOpen && (
+  <div className={`sm:hidden absolute right-0 mt-2 w-48 rounded-md overflow-hidden z-10 ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'}`}>
+    <Link to="https://github.com/RahmatullahZadran" className="block px-4 py-2  ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white">
+      GitHub
+    </Link>
+    <Link to="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" className="block px-4 py-2  ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white">
+      LinkedIn
+    </Link>
+    <Link to="mailto:rahmatullahzadran@outlook.com" className="block px-4 py-2  ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white">
+      Email
+    </Link>
+    <Link to="tel:+447500370660" className="block px-4 py-2  ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white">
+      Phone
+    </Link>
+    <Link to="https://www.youtube.com/channel/UCMfIsxDNdoiZF8DZYywOXtw" className="block px-4 py-2  ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white">
+      YouTube
+    </Link>
+  </div>
+)}
+
+        </>
+      )}
+    </Disclosure>
+  );
 }
+
+                    
