@@ -13,7 +13,7 @@
       {
         "id": 2,
         "name": "Rahmatullah Zadran Portfolio Bootstrap",
-        "image": "https://console.firebase.google.com/u/0/project/protofolio-44836/storage/protofolio-44836.appspot.com/files",
+        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/portofolioBootstrp.png?alt=media&token=caa1cf37-2794-4cff-b1d3-83e258134249",
         "githubUrl": "https://github.com/RahmatullahZadran/Bootstrap-Portofolio",
         "url": "https://rahmatullahzadran.github.io/Bootstrap-Portofolio/",
         "info": "My second portfolio with Bootstrap",
@@ -26,19 +26,19 @@
         "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/will%20you%20go%20out%20with%20me.png?alt=media&token=a221dff4-66c4-494b-8a15-895f7a4382ea",        
         "url": "https://rahmatullahzadran.github.io/Will-You-Go-Out-With-Me/",
         "githubUrl": "https://github.com/RahmatullahZadran",
-        "info": "A simple first project with JavaScript",
+        "info": "My first project with JavaScript",
         "description": "My inaugural project utilizing JavaScript led me to create a whimsical website titled 'Will You Go Out With Me.' This playful platform allowed users to send invitations for a potential date. However, there was a twist – hovering over the 'no' option triggered a delightful animation, causing it to relocate unpredictably. Building this interactive experience presented a thrilling challenge as I delved into JavaScript's capabilities to infuse dynamism into web pages. Through this project, I not only honed my coding skills but also discovered the joy of crafting engaging user interactions that spark laughter and delight.",
         "skills": ["HTML","CSS", "JavaScript","Bootstrap"]
       },
       {
         "id": 4,
-        "name": "Will You Go Out With Me",
-        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/will%20you%20go%20out%20with%20me.png?alt=media&token=a221dff4-66c4-494b-8a15-895f7a4382ea",        
-        "url": "https://rahmatullahzadran.github.io/Will-You-Go-Out-With-Me/",
-        "githubUrl": "https://github.com/RahmatullahZadran",
+        "name": "Rahmatullah Zadran Portfolio React",
+        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/react.png?alt=media&token=9afd6e61-ccdf-4f44-80f1-a1ba40386bc4",        
+        "url": "https://starlit-douhua-69eafc.netlify.app/#",
+        "githubUrl": "https://github.com/RahmatullahZadran/R.Z-Portofolio",
         "info": "A simple first project with JavaScript",
         "description": "My inaugural project utilizing JavaScript led me to create a whimsical website titled 'Will You Go Out With Me.' This playful platform allowed users to send invitations for a potential date. However, there was a twist – hovering over the 'no' option triggered a delightful animation, causing it to relocate unpredictably. Building this interactive experience presented a thrilling challenge as I delved into JavaScript's capabilities to infuse dynamism into web pages. Through this project, I not only honed my coding skills but also discovered the joy of crafting engaging user interactions that spark laughter and delight.",
-        "skills": ["HTML","CSS", "JavaScript","Bootstrap"]
+        "skills": ["HTML","CSS", "JavaScript","Bootstrap", "React"]
       },
       
       {
