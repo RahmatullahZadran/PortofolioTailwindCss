@@ -1,5 +1,5 @@
 import { Fragment, useState, } from 'react';
-import { Disclosure,} from '@headlessui/react';
+import { Disclosure, Transition} from '@headlessui/react';
 import { MenuIcon, XIcon, MoonIcon, SunIcon } from '@heroicons/react/outline';
 
 
@@ -177,6 +177,33 @@ export default function Example() {
               </div>
             </div>
           </div>
+          <Transition
+            show={open}
+            enter="transition-opacity duration-75"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition-opacity duration-150"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <Disclosure.Panel className="sm:hidden">
+              <div className="px-2 pt-2 pb-3 space-y-1">
+                {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className={classNames(
+                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      'block px-3 py-2 rounded-md text-base font-medium'
+                    )}
+                    aria-current={item.current ? 'page' : undefined}
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+            </Disclosure.Panel>
+          </Transition>
           {isDropdownOpen && (
             <div className="sm:hidden absolute right-0 mt-2 w-48 bg-gray-800 rounded-md overflow-hidden z-10 ">
               <a
