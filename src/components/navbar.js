@@ -219,23 +219,25 @@ export default function Example() {
           </Transition>
           {isDropdownOpen && (
   <div className={`sm:hidden absolute right-0 mt-2 w-48 rounded-md overflow-hidden z-10 ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'}`}>
-    <Link to="https://github.com/RahmatullahZadran" className="block px-4 py-2  ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white">
+    <Link to="https://github.com/RahmatullahZadran" className={`block px-4 py-2 ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white`}>
       GitHub
     </Link>
-    <Link to="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" className="block px-4 py-2  ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white">
+    <Link to="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" className={`block px-4 py-2 ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white`}>
       LinkedIn
     </Link>
-    <Link to="mailto:rahmatullahzadran@outlook.com" className="block px-4 py-2  ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white">
+    <Link to="mailto:rahmatullahzadran@outlook.com" className={`block px-4 py-2 ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white`}>
       Email
     </Link>
-    <Link to="tel:+447500370660" className="block px-4 py-2  ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white">
+    <Link to="tel:+447500370660" className={`block px-4 py-2 ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white`}>
       Phone
     </Link>
-    <Link to="https://www.youtube.com/channel/UCMfIsxDNdoiZF8DZYywOXtw" className="block px-4 py-2  ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white">
+    <Link to="https://www.youtube.com/channel/UCMfIsxDNdoiZF8DZYywOXtw" className={`block px-4 py-2 ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'} hover:text-white`}>
       YouTube
     </Link>
   </div>
 )}
+
+
 
         </>
       )}
