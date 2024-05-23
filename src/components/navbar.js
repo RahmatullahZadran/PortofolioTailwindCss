@@ -104,7 +104,8 @@ export default function Example() {
                 <div className="hidden sm:flex items-center space-x-3">
                   <a
                     href="https://github.com/RahmatullahZadran"
-                    target=""
+                    target=" _blank"
+                    rel="noreferrer"
                     onMouseEnter={handleGithubMouseEnter}
                     onMouseLeave={handleGithubMouseLeave}
                   >
@@ -119,6 +120,7 @@ export default function Example() {
                   <a
                     href="https://www.linkedin.com/in/rahmatullah-zadran-10b8391a6/"
                     target="_blank"
+                    rel="noreferrer"
                     onMouseEnter={handleLinkedinMouseEnter}
                     onMouseLeave={handleLinkedinMouseLeave}
                   >
@@ -133,6 +135,7 @@ export default function Example() {
                   <a
                     href="mailto:rahmatullahzadran@outlook.com"
                     target="_blank"
+                    rel="noreferrer"
                     onMouseEnter={handleEmailMouseEnter}
                     onMouseLeave={handleEmailMouseLeave}
                   >
@@ -149,6 +152,7 @@ export default function Example() {
                   <a
                     href="tel:+447500370660"
                     target="_blank"
+                    rel="noreferrer"
                     onMouseEnter={handleCallMouseEnter}
                     onMouseLeave={handleCallMouseLeave}
                   >
@@ -165,6 +169,7 @@ export default function Example() {
                   <a
                     href="https://www.youtube.com/channel/UCMfIsxDNdoiZF8DZYywOXtw"
                     target="_blank"
+                    rel="noreferrer"
                     onMouseEnter={handleYoutubeMouseEnter}
                     onMouseLeave={handleYoutubeMouseLeave}
                   >
