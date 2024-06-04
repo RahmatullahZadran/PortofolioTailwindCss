@@ -1,134 +1,192 @@
 {
-    "Projects": [
-      {
-        "id": 1,
-        "name": "Rahmatullah Zadran Portfolio HTML",
-        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/portofolioHTML.png?alt=media&token=b2236aa2-02bf-4553-b42e-2c3480609f8a",
-        "url": "https://rahmatullahzadran.github.io/Portofolio/",
-        "githubUrl":"https://github.com/RahmatullahZadran/Portofolio",
-        "info": "My first portfolio with HTML and CSS",
-        "skills": ["HTML", "CSS"],
-        "description": "Embarking on my very first portfolio project was a daunting endeavor. Constructing it from scratch using HTML and CSS posed significant challenges, testing my skills and patience. However, despite the initial difficulties, I persevered and successfully crafted a portfolio that showcased my burgeoning talents. Since then, I've traversed a considerable distance on my journey of growth and learning. Each hurdle I've encountered has served as a stepping stone, propelling me forward in honing my craft and expanding my expertise."
-      },
-      {
-        "id": 2,
-        "name": "Rahmatullah Zadran Portfolio Bootstrap",
-        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/portofolioBootstrp.png?alt=media&token=caa1cf37-2794-4cff-b1d3-83e258134249",
-        "githubUrl": "https://github.com/RahmatullahZadran/Bootstrap-Portofolio",
-        "url": "https://rahmatullahzadran.github.io/Bootstrap-Portofolio/",
-        "info": "My second portfolio with Bootstrap",
-        "skills": ["HTML", "CSS", "Bootstrap"],
-        "description": "For my second portfolio iteration, I ventured into the realm of Bootstrap, a versatile framework renowned for its robust design components. Transitioning from a simple chat app with a captivating UI, I embraced the power and flexibility of Bootstrap to enhance the aesthetics and functionality of my portfolio. This new approach enabled me to streamline the development process while maintaining a polished and professional appearance. With Bootstrap's rich assortment of pre-built elements and responsive features, I was able to elevate the user experience and showcase my evolving skill set in web development."
-      },
-      {
-        "id": 3,
-        "name": "Will You Go Out With Me",
-        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/will%20you%20go%20out%20with%20me.png?alt=media&token=a221dff4-66c4-494b-8a15-895f7a4382ea",        
-        "url": "https://rahmatullahzadran.github.io/Will-You-Go-Out-With-Me/",
-        "githubUrl": "https://github.com/RahmatullahZadran",
-        "info": "My first project with JavaScript",
-        "description": "My inaugural project utilizing JavaScript led me to create a whimsical website titled 'Will You Go Out With Me.' This playful platform allowed users to send invitations for a potential date. However, there was a twist – hovering over the 'no' option triggered a delightful animation, causing it to relocate unpredictably. Building this interactive experience presented a thrilling challenge as I delved into JavaScript's capabilities to infuse dynamism into web pages. Through this project, I not only honed my coding skills but also discovered the joy of crafting engaging user interactions that spark laughter and delight.",
-        "skills": ["HTML","CSS", "JavaScript","Bootstrap"]
-      },
-      {
-        "id": 4,
-        "name": "Your Next Watch - Project One ",
-        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/project%20one.png?alt=media&token=b7f71111-992f-4ac0-93cc-be33d034faf5",        
-        "url": "https://rahmatullahzadran.github.io/Project-One/",
-        "githubUrl": "https://github.com/RahmatullahZadran/Project-One?tab=readme-ov-file",
-        "info": "My first project with jQuery",
-        "skills": ["HTML","CSS", "JavaScript","Bootstrap", "Jquery"],
-        "description": "For my first bootcamp project, I collaborated with four other team members to create a dynamic movie search website. Using GitHub for version control, we developed the site with HTML, CSS, JavaScript, and jQuery. The website allows users to search for movies, providing detailed information and user-friendly navigation. This project was a significant learning experience, emphasizing the importance of teamwork, communication, and project management. Through this endeavor, I enhanced my technical skills and gained valuable insights into collaborative web development."
-      },
-      
-      {
-        "id": 5,
-        "name": "Rahmatullah Zadran Portfolio React",
-        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/react.png?alt=media&token=9afd6e61-ccdf-4f44-80f1-a1ba40386bc4",        
-        "image2": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/react2.png?alt=media&token=9afd6e61-ccdf-4f44-80f1-a1ba40386bc4",
-        "url": "https://starlit-douhua-69eafc.netlify.app/#",
-        "githubUrl": "https://github.com/RahmatullahZadran/R.Z-Portofolio",
-        "info": "My first portfolio with React",
-        "skills": ["HTML","CSS", "JavaScript","Bootstrap", "React"],
-        "description": "For my first portfolio project using React, I ventured into the world of component-based architecture and dynamic user interfaces. React's powerful features enabled me to build a more interactive and efficient portfolio, showcasing my projects and skills with enhanced performance and maintainability. This experience marked a significant milestone in my development journey, allowing me to leverage state management and modular design to create a seamless and engaging user experience. As I continue to refine my expertise, this project stands as a testament to my growth and adaptability in the ever-evolving field of web development."
-
-      },
-      {
-        "id": 6,
-        "name": "Smart Gadget - Project Two",
-        "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/smart.png?alt=media&token=cec60095-fbb7-415f-9129-d4066da2e3f7",        
-        "url": "https://smart-gadget123.netlify.app/",
-        "githubUrl": "https://github.com/SKhail/smart-gadget",
-        "info": "Second Portofolio with React E Commerce",
-        "skills": ["HTML","CSS", "JavaScript","Tailwind CSS", "React"],
-        "description": "For my second bootcamp project, I worked with four other team members to create a smart gadget e-commerce website. Utilizing GitHub for version control, we developed the site using HTML, CSS, JavaScript, and jQuery. This project involved creating a platform where users could browse and purchase various smart gadgets. The experience honed my technical skills and underscored the importance of collaboration, effective communication, and project management. Our teamwork allowed us to successfully implement a user-friendly interface and a seamless shopping experience, marking a significant step forward in my web development journey."
-      }
-   
-   
-   ],
-   "Skills": [
-     {
-       "id": 1,
-       "name": "React",
-       "Icon": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/1174949_js_react%20js_logo_react_react%20native_icon.png?alt=media&token=f0c06ff5-8252-4d93-94eb-c98719c8fd93"
-      },
-     {
-       "id": 2,
-       "name": "Tailwind CSS",
-       "Icon": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/wind.png?alt=media&token=a8d1635f-6ef9-44cf-8cdd-a692f54f62c5"
-     },
-     {
-       "id": 3,
-       "name": "JavaScript",
-       "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/javascript%20(1).png?alt=media&token=5297ffb8-6296-4dd8-b8f0-2d20a1f3a621"
-     },
-     {
-       "id": 4,
-       "name": "Firebase",
-       "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/database-storage.png?alt=media&token=31472333-7d0e-4067-9590-6eb91604fe57"
-     },
-     {
-       "id": 5,
-       "name": "HTML",
-       "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/html.png?alt=media&token=b1c6ea3e-5c4a-4392-afa4-8f36bd34b1ed"
-     },
-     {
-       "id": 6,
-       "name": "CSS",
-       "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/css.png?alt=media&token=f7fc9fa6-48fe-4ea0-82b4-a1b18d6817e4"
-     },
-     {
-       "id": 7,
-       "name": "Bootstrap",
-       "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/bootstrap.png?alt=media&token=71244208-f7e0-4998-8b52-47b6a6cdf553"
-     },
-     {
-       "id": 8,
-       "name": "Jquery",
-       "Icon":"https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/Jquery.png?alt=media&token=b446b2ae-aad3-4fa2-a22b-692c23af3dd3"
-     }
+  "Projects": [
+    {
+      "description": "Embarking on my very first portfolio project was a daunting endeavor. Constructing it from scratch using HTML and CSS posed significant challenges, testing my skills and patience. However, despite the initial difficulties, I persevered and successfully crafted a portfolio that showcased my burgeoning talents. Since then, I've traversed a considerable distance on my journey of growth and learning. Each hurdle I've encountered has served as a stepping stone, propelling me forward in honing my craft and expanding my expertise.",
+      "githubUrl": "https://github.com/RahmatullahZadran/Portofolio",
+      "id": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/portofolioHTML.png?alt=media&token=b2236aa2-02bf-4553-b42e-2c3480609f8a",
+      "info": "My first portfolio with HTML and CSS",
+      "name": "Rahmatullah Zadran Portfolio HTML",
+      "skills": [
+        "HTML",
+        "CSS"
       ],
-  
-   "Youtub": [
-     {
-       "id": 1,
-       "name": "How to generate an APK using React Native with Expo( VsCode)",
-       "url": "https://www.youtube.com/watch?v=4hw_UehVBAU&ab_channel=CodingLounge"
-     },
-      {
+      "url": "https://rahmatullahzadran.github.io/Portofolio/"
+    },
+    {
+      "description": "For my second portfolio iteration, I ventured into the realm of Bootstrap, a versatile framework renowned for its robust design components. Transitioning from a simple chat app with a captivating UI, I embraced the power and flexibility of Bootstrap to enhance the aesthetics and functionality of my portfolio. This new approach enabled me to streamline the development process while maintaining a polished and professional appearance. With Bootstrap's rich assortment of pre-built elements and responsive features, I was able to elevate the user experience and showcase my evolving skill set in web development.",
+      "githubUrl": "https://github.com/RahmatullahZadran/Bootstrap-Portofolio",
+      "id": 2,
+      "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/portofolioBootstrp.png?alt=media&token=caa1cf37-2794-4cff-b1d3-83e258134249",
+      "info": "My second portfolio with Bootstrap",
+      "name": "Rahmatullah Zadran Portfolio Bootstrap",
+      "skills": [
+        "HTML",
+        "CSS",
+        "Bootstrap"
+      ],
+      "url": "https://rahmatullahzadran.github.io/Bootstrap-Portofolio/"
+    },
+    {
+      "description": "My inaugural project utilizing JavaScript led me to create a whimsical website titled 'Will You Go Out With Me.' This playful platform allowed users to send invitations for a potential date. However, there was a twist – hovering over the 'no' option triggered a delightful animation, causing it to relocate unpredictably. Building this interactive experience presented a thrilling challenge as I delved into JavaScript's capabilities to infuse dynamism into web pages. Through this project, I not only honed my coding skills but also discovered the joy of crafting engaging user interactions that spark laughter and delight.",
+      "githubUrl": "https://github.com/RahmatullahZadran",
+      "id": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/will%20you%20go%20out%20with%20me.png?alt=media&token=a221dff4-66c4-494b-8a15-895f7a4382ea",
+      "info": "My first project with JavaScript",
+      "name": "Will You Go Out With Me",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap"
+      ],
+      "url": "https://rahmatullahzadran.github.io/Will-You-Go-Out-With-Me/"
+    },
+    {
+      "description": "For my first bootcamp project, I collaborated with four other team members to create a dynamic movie search website. Using GitHub for version control, we developed the site with HTML, CSS, JavaScript, and jQuery. The website allows users to search for movies, providing detailed information and user-friendly navigation. This project was a significant learning experience, emphasizing the importance of teamwork, communication, and project management. Through this endeavor, I enhanced my technical skills and gained valuable insights into collaborative web development.",
+      "githubUrl": "https://github.com/RahmatullahZadran/Project-One?tab=readme-ov-file",
+      "id": 4,
+      "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/project%20one.png?alt=media&token=b7f71111-992f-4ac0-93cc-be33d034faf5",
+      "info": "My first project with jQuery",
+      "name": "Your Next Watch - Project One ",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+        "Jquery"
+      ],
+      "url": "https://rahmatullahzadran.github.io/Project-One/"
+    },
+    {
+      "description": "For my first portfolio project using React, I ventured into the world of component-based architecture and dynamic user interfaces. React's powerful features enabled me to build a more interactive and efficient portfolio, showcasing my projects and skills with enhanced performance and maintainability. This experience marked a significant milestone in my development journey, allowing me to leverage state management and modular design to create a seamless and engaging user experience. As I continue to refine my expertise, this project stands as a testament to my growth and adaptability in the ever-evolving field of web development.",
+      "githubUrl": "https://github.com/RahmatullahZadran/R.Z-Portofolio",
+      "id": 5,
+      "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/react.png?alt=media&token=9afd6e61-ccdf-4f44-80f1-a1ba40386bc4",
+      "image2": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/react2.png?alt=media&token=9afd6e61-ccdf-4f44-80f1-a1ba40386bc4",
+      "info": "My first portfolio with React",
+      "name": "Rahmatullah Zadran Portfolio React",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+        "React"
+      ],
+      "url": "https://starlit-douhua-69eafc.netlify.app/#"
+    },
+    {
+      "description": "For my second bootcamp project, I worked with four other team members to create a smart gadget e-commerce website. Utilizing GitHub for version control, we developed the site using HTML, CSS, JavaScript, and jQuery. This project involved creating a platform where users could browse and purchase various smart gadgets. The experience honed my technical skills and underscored the importance of collaboration, effective communication, and project management. Our teamwork allowed us to successfully implement a user-friendly interface and a seamless shopping experience, marking a significant step forward in my web development journey.",
+      "githubUrl": "https://github.com/SKhail/smart-gadget",
+      "id": 6,
+      "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/smart.png?alt=media&token=cec60095-fbb7-415f-9129-d4066da2e3f7",
+      "info": "Second Portofolio with React E Commerce",
+      "name": "Smart Gadget - Project Two",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Tailwind CSS",
+        "React"
+      ],
+      "url": "https://smart-gadget123.netlify.app/"
+    },
+    {
+      "description": "In my inaugural Angular project, RAthletes emerged as a testament to my journey into the dynamic world of front-end development. With Angular's robust framework as my guide, I meticulously sculpted a captivating user experience, seamlessly integrating features like routing and component-based architecture to craft a visually stunning platform. Through RAthletes, I not only honed my skills in Angular but also discovered the transformative power of technology in reshaping the way fitness enthusiasts engage with their training routines.  ",
+      "githubUrl": "https://github.com/RahmatullahZadran/RAthletes",
+      "id": 7,
+      "image": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/Raathletes.png?alt=media&token=fb344ef9-a990-4a49-958c-14aa28b3c673",
+      "info": "R-Athletes, First Angular 18 project",
+      "name": "R-Atheles",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Tailwind CSS",
+        "Angular"
+      ],
+      "url": "https://r-athletes.vercel.app/"
+
+    }
+
+  ],
+  "Skills": [
+    {
+      "Icon": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/1174949_js_react%20js_logo_react_react%20native_icon.png?alt=media&token=f0c06ff5-8252-4d93-94eb-c98719c8fd93",
+      "id": 1,
+      "name": "React"
+    },
+    {
+      "Icon": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/wind.png?alt=media&token=a8d1635f-6ef9-44cf-8cdd-a692f54f62c5",
+      "id": 2,
+      "name": "Tailwind CSS"
+    },
+    {
+      "Icon": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/javascript%20(1).png?alt=media&token=5297ffb8-6296-4dd8-b8f0-2d20a1f3a621",
+      "id": 3,
+      "name": "JavaScript"
+    },
+    {
+      "Icon": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/database-storage.png?alt=media&token=31472333-7d0e-4067-9590-6eb91604fe57",
+      "id": 4,
+      "name": "Firebase"
+    },
+    {
+      "Icon": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/html.png?alt=media&token=b1c6ea3e-5c4a-4392-afa4-8f36bd34b1ed",
+      "id": 5,
+      "name": "HTML"
+    },
+    {
+      "Icon": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/css.png?alt=media&token=f7fc9fa6-48fe-4ea0-82b4-a1b18d6817e4",
+      "id": 6,
+      "name": "CSS"
+    },
+    {
+      "Icon": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/bootstrap.png?alt=media&token=71244208-f7e0-4998-8b52-47b6a6cdf553",
+      "id": 7,
+      "name": "Bootstrap"
+    },
+    {
+      "Icon": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/Jquery.png?alt=media&token=b446b2ae-aad3-4fa2-a22b-692c23af3dd3",
+      "id": 8,
+      "name": "Jquery"
+    },
+    {
+      "Icon": "https://firebasestorage.googleapis.com/v0/b/protofolio-44836.appspot.com/o/angularjs.png?alt=media&token=db6a529d-7f49-47c3-bd81-9565deb1912d",
+      "name": "Angular",
+      "id": 9
+    }
+    ],
+  "Youtub": [
+    {
+      "id": 1,
+      "name": "How to generate an APK using React Native with Expo( VsCode)",
+      "url": "https://www.youtube.com/watch?v=4hw_UehVBAU&ab_channel=CodingLounge"
+    },
+    {
       "id": 2,
       "name": "How to generate and connect SSH KEY to GitHub",
       "url": "https://www.youtube.com/watch?v=A0tTtPgKLOI&ab_channel=CodingLounge"
     },
     {
       "id": 3,
-      "name":"How to Install TailwindCSS from Scratch React in 5 min",
-      "url":"https://www.youtube.com/watch?v=YTAehC-cBV0&ab_channel=CodingLounge"
+      "name": "How to Install TailwindCSS from Scratch React in 5 min",
+      "url": "https://www.youtube.com/watch?v=YTAehC-cBV0&ab_channel=CodingLounge"
     },
     {
       "id": 4,
-      "name":"How to setup Realtime Database NoSQL(Firebase) for beginners-React",
-      "url":"https://www.youtube.com/watch?v=n6v8dWJUk5k&ab_channel=CodingLounge"
+      "name": "How to setup Realtime Database NoSQL(Firebase) for beginners-React",
+      "url": "https://www.youtube.com/watch?v=n6v8dWJUk5k&ab_channel=CodingLounge"
+    },
+    {
+      "id": 5,
+      "name": "How to setup Realtime Database NoSQL(Firebase) for beginners-React",
+      "url": "https://www.youtube.com/watch?v=n6v8dWJUk5k&ab_channel=CodingLounge"
+    },
+    {
+      "id": 6,
+      "name": "Angular 18: How to fix NG0303: Can't bind to 'ngForOf'  Error",
+      "url": "https://www.youtube.com/watch?v=OanXZK8CAtI&ab_channel=CodingLounge"
     }
-   ]
-  }
+  ]
+}
